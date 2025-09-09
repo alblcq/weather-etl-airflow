@@ -1,0 +1,1051 @@
+2025-09-02 18:18:35,580 - INFO - Success: Retrieved weather for London
+2025-09-02 18:18:36,186 - INFO - Success: Retrieved weather for Paris
+2025-09-02 18:18:36,796 - INFO - Success: Retrieved weather for New York
+2025-09-02 18:18:37,718 - INFO - Success: Retrieved weather for Tokyo
+2025-09-02 18:21:01,899 - INFO - Success: Retrieved weather for London
+2025-09-02 18:21:02,820 - INFO - Success: Retrieved weather for Paris
+2025-09-02 18:21:03,742 - INFO - Success: Retrieved weather for New York
+2025-09-02 18:21:04,357 - INFO - Success: Retrieved weather for Tokyo
+2025-09-04 18:59:19,446 - INFO - Success: Extracted weather for London
+2025-09-04 18:59:19,866 - INFO - Success: Extracted weather for Paris
+2025-09-04 18:59:20,160 - INFO - Success: Extracted weather for New York
+2025-09-04 18:59:20,472 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:16:15,165 - INFO - Success: Extracted weather for London
+2025-09-04 19:16:16,094 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:16:16,452 - INFO - Success: Extracted weather for New York
+2025-09-04 19:16:16,699 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:16:16,701 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:16:16,702 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 14, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:24:25,665 - INFO - Success: Extracted weather for London
+2025-09-04 19:24:25,969 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:24:26,237 - INFO - Success: Extracted weather for New York
+2025-09-04 19:24:26,582 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:24:26,584 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:24:26,584 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 14, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:25:36,731 - INFO - Success: Extracted weather for London
+2025-09-04 19:25:36,868 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:25:37,021 - INFO - Success: Extracted weather for New York
+2025-09-04 19:25:37,193 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:25:37,194 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:25:37,195 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:25:37,195 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 15, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:27:13,803 - INFO - Success: Extracted weather for London
+2025-09-04 19:27:14,111 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:27:14,380 - INFO - Success: Extracted weather for New York
+2025-09-04 19:27:14,725 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:27:14,726 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: alblcq
+2025-09-04 19:27:14,726 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:27:14,726 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:27:14,726 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:27:14,727 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:27:14,727 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: WEATHER_RAW
+2025-09-04 19:27:14,727 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:27:14,727 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:28:53,439 - INFO - Success: Extracted weather for London
+2025-09-04 19:28:53,695 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:28:53,953 - INFO - Success: Extracted weather for New York
+2025-09-04 19:28:54,230 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:28:54,233 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: alblcq
+2025-09-04 19:28:54,234 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:28:54,234 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:28:54,235 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:28:54,235 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:28:54,235 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: RAW_DATA
+2025-09-04 19:28:54,236 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:28:54,237 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:32:33,500 - INFO - Success: Extracted weather for London
+2025-09-04 19:32:33,807 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:32:34,114 - INFO - Success: Extracted weather for New York
+2025-09-04 19:32:34,338 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:32:34,339 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: ALBLCQ
+2025-09-04 19:32:34,339 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:32:34,339 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:32:34,339 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:32:34,339 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:32:34,340 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: RAW_DATA
+2025-09-04 19:32:34,340 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:32:34,340 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:33:52,451 - INFO - Success: Extracted weather for London
+2025-09-04 19:33:52,758 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:33:53,013 - INFO - Success: Extracted weather for New York
+2025-09-04 19:33:53,286 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:33:53,288 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: ALBLCQ
+2025-09-04 19:33:53,289 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:33:53,289 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:33:53,290 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:33:53,290 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:33:53,290 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: RAW_DATA
+2025-09-04 19:33:53,291 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:33:53,291 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:34:10,577 - INFO - Success: Extracted weather for London
+2025-09-04 19:34:10,883 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:34:11,121 - INFO - Success: Extracted weather for New York
+2025-09-04 19:34:11,498 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:34:11,500 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: ALBLCQ
+2025-09-04 19:34:11,500 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:34:11,500 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:34:11,500 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:34:11,501 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:34:11,501 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: RAW_DATA
+2025-09-04 19:34:11,502 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:34:11,502 - ERROR - Snowflake load error: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 922, in connect
+    self.__config(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1462, in __config
+    self._host = construct_hostname(kwargs.get("region"), self._account)
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\util_text.py", line 251, in construct_hostname
+    if account.find(".") > 0 and _is_china_region(account.split(".")[1]):
+       ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'find'
+2025-09-04 19:35:57,892 - INFO - Success: Extracted weather for London
+2025-09-04 19:35:58,200 - INFO - Success: Extracted weather for Paris
+2025-09-04 19:35:58,507 - INFO - Success: Extracted weather for New York
+2025-09-04 19:35:58,774 - INFO - Success: Extracted weather for Tokyo
+2025-09-04 19:35:58,776 - INFO - SNOWFLAKE_USER type: <class 'str'>, value: ALBLCQ
+2025-09-04 19:35:58,776 - INFO - SNOWFLAKE_PASSWORD type: <class 'str'>, value: Careeverywhere24404134!
+2025-09-04 19:35:58,777 - INFO - SNOWFLAKE_ACCOUNT type: <class 'str'>, value: EWVIGSQ-HBC46363
+2025-09-04 19:35:58,777 - INFO - SNOWFLAKE_WAREHOUSE type: <class 'str'>, value: WEATHER_WH
+2025-09-04 19:35:58,777 - INFO - SNOWFLAKE_DATABASE type: <class 'str'>, value: WEATHER_DB
+2025-09-04 19:35:58,778 - INFO - SNOWFLAKE_SCHEMA type: <class 'str'>, value: RAW_DATA
+2025-09-04 19:35:58,778 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-04 19:35:58,779 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-04 19:36:02,809 - INFO - Inserted raw data for London
+2025-09-04 19:36:03,541 - INFO - Inserted raw data for Paris
+2025-09-04 19:36:04,241 - INFO - Inserted raw data for New York
+2025-09-04 19:36:05,163 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:11:33,898 - INFO - Success: Extracted weather for London
+2025-09-05 19:11:34,203 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:11:34,419 - INFO - Success: Extracted weather for New York
+2025-09-05 19:11:34,548 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:11:34,550 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:11:34,551 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:11:37,617 - INFO - Inserted raw data for London
+2025-09-05 19:11:38,365 - INFO - Inserted raw data for Paris
+2025-09-05 19:11:39,316 - INFO - Inserted raw data for New York
+2025-09-05 19:11:39,918 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:11:40,107 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:11:40,108 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:17:04,343 - INFO - Success: Extracted weather for London
+2025-09-05 19:17:04,651 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:17:04,957 - INFO - Success: Extracted weather for New York
+2025-09-05 19:17:05,265 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:17:05,269 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:17:05,269 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:17:07,716 - INFO - Inserted raw data for London
+2025-09-05 19:17:08,747 - INFO - Inserted raw data for Paris
+2025-09-05 19:17:09,566 - INFO - Inserted raw data for New York
+2025-09-05 19:17:09,976 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:17:10,364 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:17:10,364 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:17:55,134 - INFO - Success: Extracted weather for London
+2025-09-05 19:17:55,441 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:17:56,574 - INFO - Success: Extracted weather for New York
+2025-09-05 19:17:56,732 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:17:56,733 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:17:56,734 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:17:58,141 - INFO - Inserted raw data for London
+2025-09-05 19:17:58,549 - INFO - Inserted raw data for Paris
+2025-09-05 19:17:58,947 - INFO - Inserted raw data for New York
+2025-09-05 19:17:59,310 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:17:59,476 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:17:59,477 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:23:24,048 - INFO - Success: Extracted weather for London
+2025-09-05 19:23:24,357 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:23:24,661 - INFO - Success: Extracted weather for New York
+2025-09-05 19:23:24,970 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:23:24,973 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:23:24,974 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:23:26,876 - INFO - Inserted raw data for London
+2025-09-05 19:23:27,251 - INFO - Inserted raw data for Paris
+2025-09-05 19:23:27,840 - INFO - Inserted raw data for New York
+2025-09-05 19:23:28,757 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:23:29,079 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:23:29,080 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:23:29,679 - ERROR - Error Loading Dataframe to Snowflake: Missing optional dependency: pandas
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 61, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'WEATHER_TARNSFORMED')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 392, in write_pandas
+    isinstance(df.index, pandas.RangeIndex)
+                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\options.py", line 36, in __getattr__
+    raise errors.MissingDependencyError(self._dep_name)
+snowflake.connector.errors.MissingDependencyError: Missing optional dependency: pandas
+2025-09-05 19:24:54,490 - INFO - Success: Extracted weather for London
+2025-09-05 19:24:54,668 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:24:54,979 - INFO - Success: Extracted weather for New York
+2025-09-05 19:24:55,286 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:24:55,287 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:24:55,288 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:24:57,012 - INFO - Inserted raw data for London
+2025-09-05 19:24:57,808 - INFO - Inserted raw data for Paris
+2025-09-05 19:24:58,370 - INFO - Inserted raw data for New York
+2025-09-05 19:24:58,764 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:24:59,077 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:24:59,077 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:24:59,485 - ERROR - Error Loading Dataframe to Snowflake: Missing optional dependency: pandas
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'WEATHER_TARNSFORMED')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 392, in write_pandas
+    isinstance(df.index, pandas.RangeIndex)
+                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\options.py", line 36, in __getattr__
+    raise errors.MissingDependencyError(self._dep_name)
+snowflake.connector.errors.MissingDependencyError: Missing optional dependency: pandas
+2025-09-05 19:29:53,238 - INFO - Success: Extracted weather for London
+2025-09-05 19:29:53,411 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:29:53,568 - INFO - Success: Extracted weather for New York
+2025-09-05 19:29:53,703 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:29:53,706 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:29:53,706 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:29:55,732 - INFO - Inserted raw data for London
+2025-09-05 19:29:56,405 - INFO - Inserted raw data for Paris
+2025-09-05 19:29:57,165 - INFO - Inserted raw data for New York
+2025-09-05 19:29:57,883 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:29:58,209 - INFO - Snowflake Connector for Python Version: 3.17.2, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:29:58,210 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:29:58,654 - ERROR - Error Loading Dataframe to Snowflake: Missing optional dependency: pandas
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'WEATHER_TARNSFORMED')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 392, in write_pandas
+    isinstance(df.index, pandas.RangeIndex)
+                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\options.py", line 36, in __getattr__
+    raise errors.MissingDependencyError(self._dep_name)
+snowflake.connector.errors.MissingDependencyError: Missing optional dependency: pandas
+2025-09-05 19:34:57,822 - INFO - Success: Extracted weather for London
+2025-09-05 19:34:58,122 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:34:58,428 - INFO - Success: Extracted weather for New York
+2025-09-05 19:34:58,557 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:34:58,561 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:34:58,562 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:35:00,721 - INFO - Inserted raw data for London
+2025-09-05 19:35:01,446 - INFO - Inserted raw data for Paris
+2025-09-05 19:35:01,830 - INFO - Inserted raw data for New York
+2025-09-05 19:35:02,266 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:35:02,458 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:35:02,459 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:35:02,860 - ERROR - Error Loading Dataframe to Snowflake: Missing optional dependency: pandas
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'WEATHER_TARNSFORMED')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 392, in write_pandas
+    isinstance(df.index, pandas.RangeIndex)
+                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\options.py", line 36, in __getattr__
+    raise errors.MissingDependencyError(self._dep_name)
+snowflake.connector.errors.MissingDependencyError: Missing optional dependency: pandas
+2025-09-05 19:36:16,048 - INFO - Success: Extracted weather for London
+2025-09-05 19:36:16,356 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:36:16,663 - INFO - Success: Extracted weather for New York
+2025-09-05 19:36:16,868 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:36:16,869 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:36:16,870 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:36:19,223 - INFO - Inserted raw data for London
+2025-09-05 19:36:19,940 - INFO - Inserted raw data for Paris
+2025-09-05 19:36:20,656 - INFO - Inserted raw data for New York
+2025-09-05 19:36:21,338 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:36:46,325 - INFO - Success: Extracted weather for London
+2025-09-05 19:36:46,487 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:36:46,625 - INFO - Success: Extracted weather for New York
+2025-09-05 19:36:46,765 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:36:46,768 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:36:46,768 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:36:48,136 - INFO - Inserted raw data for London
+2025-09-05 19:36:48,764 - INFO - Inserted raw data for Paris
+2025-09-05 19:36:49,226 - INFO - Inserted raw data for New York
+2025-09-05 19:36:50,046 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:39:16,206 - INFO - Success: Extracted weather for London
+2025-09-05 19:39:16,341 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:39:16,478 - INFO - Success: Extracted weather for New York
+2025-09-05 19:39:16,615 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:39:16,616 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:39:16,617 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:39:18,207 - INFO - Inserted raw data for London
+2025-09-05 19:39:18,779 - INFO - Inserted raw data for Paris
+2025-09-05 19:39:19,376 - INFO - Inserted raw data for New York
+2025-09-05 19:39:20,060 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:39:53,520 - INFO - Success: Extracted weather for London
+2025-09-05 19:39:53,667 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:39:53,815 - INFO - Success: Extracted weather for New York
+2025-09-05 19:39:53,964 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:39:53,966 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:39:53,967 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:39:55,596 - INFO - Inserted raw data for London
+2025-09-05 19:39:56,109 - INFO - Inserted raw data for Paris
+2025-09-05 19:39:56,527 - INFO - Inserted raw data for New York
+2025-09-05 19:39:56,910 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:52:00,087 - INFO - Success: Extracted weather for London
+2025-09-05 19:52:00,291 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:52:00,596 - INFO - Success: Extracted weather for New York
+2025-09-05 19:52:00,903 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:52:00,905 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:52:00,905 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:52:02,977 - INFO - Inserted raw data for London
+2025-09-05 19:52:03,561 - INFO - Inserted raw data for Paris
+2025-09-05 19:52:04,398 - INFO - Inserted raw data for New York
+2025-09-05 19:52:05,206 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:52:05,724 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:52:05,725 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:52:06,443 - ERROR - Error Loading Dataframe to Snowflake: Missing optional dependency: pandas
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'weather_transformed')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 392, in write_pandas
+    isinstance(df.index, pandas.RangeIndex)
+                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\options.py", line 36, in __getattr__
+    raise errors.MissingDependencyError(self._dep_name)
+snowflake.connector.errors.MissingDependencyError: Missing optional dependency: pandas
+2025-09-05 19:54:01,020 - INFO - Success: Extracted weather for London
+2025-09-05 19:54:01,328 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:54:01,635 - INFO - Success: Extracted weather for New York
+2025-09-05 19:54:01,942 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:54:01,945 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:54:01,946 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:54:03,841 - INFO - Inserted raw data for London
+2025-09-05 19:54:04,617 - INFO - Inserted raw data for Paris
+2025-09-05 19:54:06,243 - INFO - Inserted raw data for New York
+2025-09-05 19:54:06,754 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:54:07,083 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:54:07,084 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:54:09,666 - ERROR - Error Loading Dataframe to Snowflake: 001757 (42601): 01bedb9a-0000-303f-0053-660b0002a5ee: SQL compilation error:
+Table '"weather_transformed"' does not exist
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'weather_transformed')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 602, in write_pandas
+    copy_results = cursor.execute(
+                   ~~~~~~~~~~~~~~^
+        copy_into_sql,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        num_statements=1,
+        ^^^^^^^^^^^^^^^^^
+    ).fetchall()
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\cursor.py", line 1134, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 286, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+        connection,
+    ...<2 lines>...
+        error_value,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 341, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 217, in default_errorhandler
+    raise error_class(
+    ...<10 lines>...
+    )
+snowflake.connector.errors.ProgrammingError: 001757 (42601): 01bedb9a-0000-303f-0053-660b0002a5ee: SQL compilation error:
+Table '"weather_transformed"' does not exist
+2025-09-05 19:54:34,916 - INFO - Success: Extracted weather for London
+2025-09-05 19:54:35,223 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:54:35,529 - INFO - Success: Extracted weather for New York
+2025-09-05 19:54:35,836 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:54:35,839 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:54:35,839 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:54:37,168 - INFO - Inserted raw data for London
+2025-09-05 19:54:37,549 - INFO - Inserted raw data for Paris
+2025-09-05 19:54:38,199 - INFO - Inserted raw data for New York
+2025-09-05 19:54:38,863 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:54:39,032 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:54:39,032 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:54:40,153 - ERROR - Error Loading Dataframe to Snowflake: 000904 (42000): 01bedb9a-0000-3099-0053-660b0003107e: SQL compilation error: error line 1 at position 86
+invalid identifier '"city_name"'
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 62, in load_transformed_to_snowflake
+    success, nchunks, nrows, _ = write_pandas(conn, df, 'WEATHER_TRANSFORMED')
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\pandas_tools.py", line 602, in write_pandas
+    copy_results = cursor.execute(
+                   ~~~~~~~~~~~~~~^
+        copy_into_sql,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        num_statements=1,
+        ^^^^^^^^^^^^^^^^^
+    ).fetchall()
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\cursor.py", line 1134, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 286, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+        connection,
+    ...<2 lines>...
+        error_value,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 341, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\errors.py", line 217, in default_errorhandler
+    raise error_class(
+    ...<10 lines>...
+    )
+snowflake.connector.errors.ProgrammingError: 000904 (42000): 01bedb9a-0000-3099-0053-660b0003107e: SQL compilation error: error line 1 at position 86
+invalid identifier '"city_name"'
+2025-09-05 19:59:15,598 - INFO - Success: Extracted weather for London
+2025-09-05 19:59:15,906 - INFO - Success: Extracted weather for Paris
+2025-09-05 19:59:16,212 - INFO - Success: Extracted weather for New York
+2025-09-05 19:59:16,518 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 19:59:16,520 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:59:16,521 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 19:59:18,434 - INFO - Inserted raw data for London
+2025-09-05 19:59:19,179 - INFO - Inserted raw data for Paris
+2025-09-05 19:59:19,798 - INFO - Inserted raw data for New York
+2025-09-05 19:59:20,615 - INFO - Inserted raw data for Tokyo
+2025-09-05 19:59:20,939 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 19:59:20,940 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:08:03,272 - INFO - Success: Extracted weather for London
+2025-09-05 20:08:03,579 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:08:03,884 - INFO - Success: Extracted weather for New York
+2025-09-05 20:08:04,081 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:08:04,083 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:08:04,084 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:08:06,444 - INFO - Inserted raw data for London
+2025-09-05 20:08:07,366 - INFO - Inserted raw data for Paris
+2025-09-05 20:08:08,493 - INFO - Inserted raw data for New York
+2025-09-05 20:08:09,312 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:08:09,953 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:08:09,954 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:10:45,987 - INFO - Success: Extracted weather for London
+2025-09-05 20:10:46,295 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:10:46,599 - INFO - Success: Extracted weather for New York
+2025-09-05 20:10:46,906 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:10:46,907 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:10:46,908 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:10:48,623 - INFO - Inserted raw data for London
+2025-09-05 20:10:49,262 - INFO - Inserted raw data for Paris
+2025-09-05 20:10:50,077 - INFO - Inserted raw data for New York
+2025-09-05 20:10:50,492 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:10:50,919 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:10:50,919 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:11:05,570 - INFO - Success: Extracted weather for London
+2025-09-05 20:11:05,707 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:11:05,847 - INFO - Success: Extracted weather for New York
+2025-09-05 20:11:05,986 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:11:05,988 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:11:05,988 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:11:07,649 - INFO - Inserted raw data for London
+2025-09-05 20:11:08,289 - INFO - Inserted raw data for Paris
+2025-09-05 20:11:08,826 - INFO - Inserted raw data for New York
+2025-09-05 20:11:09,640 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:11:09,950 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:11:09,951 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:15:46,942 - INFO - Success: Extracted weather for London
+2025-09-05 20:15:47,251 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:15:47,466 - INFO - Success: Extracted weather for New York
+2025-09-05 20:15:47,761 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:15:47,765 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:15:47,766 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:15:51,550 - INFO - Inserted raw data for London
+2025-09-05 20:15:52,267 - INFO - Inserted raw data for Paris
+2025-09-05 20:15:52,779 - INFO - Inserted raw data for New York
+2025-09-05 20:15:53,598 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:15:55,458 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:15:55,459 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:16:35,377 - INFO - Success: Extracted weather for London
+2025-09-05 20:16:35,685 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:16:35,835 - INFO - Success: Extracted weather for New York
+2025-09-05 20:16:36,094 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:16:36,095 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:16:36,096 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:16:37,937 - INFO - Inserted raw data for London
+2025-09-05 20:16:38,449 - INFO - Inserted raw data for Paris
+2025-09-05 20:16:39,168 - INFO - Inserted raw data for New York
+2025-09-05 20:16:43,264 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:16:43,882 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:16:43,882 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:23:37,549 - INFO - Success: Extracted weather for London
+2025-09-05 20:23:37,886 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:23:38,142 - INFO - Success: Extracted weather for New York
+2025-09-05 20:23:38,499 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:23:38,500 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:23:38,500 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:23:41,017 - INFO - Inserted raw data for London
+2025-09-05 20:23:41,673 - INFO - Inserted raw data for Paris
+2025-09-05 20:23:42,083 - INFO - Inserted raw data for New York
+2025-09-05 20:23:42,494 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:23:42,838 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:23:42,839 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:30:56,469 - INFO - Success: Extracted weather for London
+2025-09-05 20:30:56,781 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:30:57,083 - INFO - Success: Extracted weather for New York
+2025-09-05 20:30:57,390 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:30:57,392 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:30:57,392 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:30:59,402 - INFO - Inserted raw data for London
+2025-09-05 20:31:00,158 - INFO - Inserted raw data for Paris
+2025-09-05 20:31:00,872 - INFO - Inserted raw data for New York
+2025-09-05 20:31:01,423 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:31:02,029 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:31:02,030 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:45:26,709 - INFO - Success: Extracted weather for London
+2025-09-05 20:45:26,855 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:45:26,978 - INFO - Success: Extracted weather for New York
+2025-09-05 20:45:27,131 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:45:27,137 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:45:27,139 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:45:29,571 - INFO - Inserted raw data for London
+2025-09-05 20:45:30,259 - INFO - Inserted raw data for Paris
+2025-09-05 20:45:30,769 - INFO - Inserted raw data for New York
+2025-09-05 20:45:31,486 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:45:31,912 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:45:31,913 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:45:34,841 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:45:34,842 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:45:35,677 - WARNING - Data quality check failed: 4 issues found.
+2025-09-05 20:45:35,678 - WARNING - Bad Row: ('London', 2643743, 'GB', Decimal('51.508500'), Decimal('-0.125700'), Decimal('14.43'), Decimal('14.15'), 85, Decimal('1022.00'), Decimal('1.54'), 200, 100, 'Clouds', 'overcast clouds', datetime.datetime(2025, 9, 5, 20, 33, 59), datetime.datetime(2025, 9, 5, 20, 45, 31, 897145), 'run_20250905_204526')
+2025-09-05 20:45:35,679 - WARNING - Bad Row: ('Paris', 2988507, 'FR', Decimal('48.853400'), Decimal('2.348800'), Decimal('14.45'), Decimal('14.09'), 82, Decimal('1023.00'), Decimal('1.54'), 0, 0, 'Clear', 'clear sky', datetime.datetime(2025, 9, 5, 20, 33, 15), datetime.datetime(2025, 9, 5, 20, 45, 31, 897152), 'run_20250905_204526')
+2025-09-05 20:45:35,680 - WARNING - Bad Row: ('New York', 5128581, 'US', Decimal('40.714300'), Decimal('-74.006000'), Decimal('25.13'), Decimal('25.66'), 75, Decimal('1014.00'), Decimal('5.66'), 190, 0, 'Clear', 'clear sky', datetime.datetime(2025, 9, 5, 20, 43, 59), datetime.datetime(2025, 9, 5, 20, 45, 31, 897156), 'run_20250905_204526')
+2025-09-05 20:45:35,680 - WARNING - Bad Row: ('Tokyo', 1850144, 'JP', Decimal('35.689500'), Decimal('139.691700'), Decimal('28.78'), Decimal('31.27'), 64, Decimal('1011.00'), Decimal('1.54'), 120, 20, 'Clouds', 'few clouds', datetime.datetime(2025, 9, 5, 20, 37, 56), datetime.datetime(2025, 9, 5, 20, 45, 31, 897159), 'run_20250905_204526')
+2025-09-05 20:48:02,478 - INFO - Success: Extracted weather for London
+2025-09-05 20:48:02,607 - INFO - Success: Extracted weather for Paris
+2025-09-05 20:48:02,733 - INFO - Success: Extracted weather for New York
+2025-09-05 20:48:02,885 - INFO - Success: Extracted weather for Tokyo
+2025-09-05 20:48:02,886 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:48:02,887 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:48:04,741 - INFO - Inserted raw data for London
+2025-09-05 20:48:05,381 - INFO - Inserted raw data for Paris
+2025-09-05 20:48:06,682 - INFO - Inserted raw data for New York
+2025-09-05 20:48:07,443 - INFO - Inserted raw data for Tokyo
+2025-09-05 20:48:07,721 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:48:07,722 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:48:10,233 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-05 20:48:10,234 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-05 20:48:11,003 - INFO - Data quality check passed: no issues found.
+2025-09-08 22:03:16,156 - INFO - Success: Extracted weather for London
+2025-09-08 22:03:16,321 - INFO - Success: Extracted weather for Paris
+2025-09-08 22:03:16,663 - INFO - Success: Extracted weather for New York
+2025-09-08 22:03:17,010 - INFO - Success: Extracted weather for Tokyo
+2025-09-08 22:03:17,014 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-08 22:03:17,015 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-08 22:03:28,923 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7ADF1EA50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /session/v1/login-request?request_id=bfd66f93-5ca6-4ac9-bef3-98f8d21ace98&databaseName=WEATHER_DB&schemaName=RAW_DATA&warehouse=WEATHER_WH&request_guid=1da895d4-5d63-4fc0-a65f-d7838119be04
+2025-09-08 22:03:41,305 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01E990>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /session/v1/login-request?request_id=d3682e88-3251-4e8f-8c7c-86ddfc8dd7aa&databaseName=WEATHER_DB&schemaName=RAW_DATA&warehouse=WEATHER_WH&request_guid=35576109-44fc-4b10-85b0-28cd1d2f6ef4
+2025-09-08 22:03:41,324 - ERROR - Snowflake load error: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\util\connection.py", line 79, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 1058, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+snowflake.connector.vendored.urllib3.exceptions.NewConnectionError: <snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7ADEB1A90>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 485, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 827, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<11 lines>...
+        **response_kw
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+snowflake.connector.vendored.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ewvigsq-hbc46363.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=bfd66f93-5ca6-4ac9-bef3-98f8d21ace98&databaseName=WEATHER_DB&schemaName=RAW_DATA&warehouse=WEATHER_WH&request_guid=1da895d4-5d63-4fc0-a65f-d7838119be04 (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7ADEB1A90>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 1083, in _request_exec
+    raw_ret = session.request(
+        method=method,
+    ...<6 lines>...
+        auth=auth,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 518, in send
+    raise ConnectionError(e, request=request)
+snowflake.connector.vendored.requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ewvigsq-hbc46363.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=bfd66f93-5ca6-4ac9-bef3-98f8d21ace98&databaseName=WEATHER_DB&schemaName=RAW_DATA&warehouse=WEATHER_WH&request_guid=1da895d4-5d63-4fc0-a65f-d7838119be04 (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7ADEB1A90>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1736, in _authenticate
+    auth.authenticate(
+    ~~~~~~~~~~~~~~~~~^
+        auth_instance=auth_instance,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        session_parameters=self._session_parameters,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\auth\_auth.py", line 238, in authenticate
+    ret = self._rest._post_request(
+        url,
+    ...<2 lines>...
+        socket_timeout=auth_instance._socket_timeout,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 728, in _post_request
+    ret = self.fetch(
+        "post",
+    ...<8 lines>...
+        socket_timeout=socket_timeout,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 847, in fetch
+    ret = self._request_exec_wrapper(
+        session, method, full_url, headers, data, retry_ctx, **kwargs
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 988, in _request_exec_wrapper
+    raise e
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 898, in _request_exec_wrapper
+    return_object = self._request_exec(
+        session=session,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 1181, in _request_exec
+    raise OperationalError(
+    ...<2 lines>...
+    )
+snowflake.connector.errors.OperationalError: 251011: 251011: ConnectionTimeout occurred during login. Will be handled by authenticator
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 16, in load_raw_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema=cfg['SNOWFLAKE_SCHEMA']
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 972, in connect
+    self.__open_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1371, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1704, in authenticate_with_retry
+    self._authenticate(auth_instance)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1782, in _authenticate
+    raise auth_op from e
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1757, in _authenticate
+    auth_instance.handle_timeout(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        authenticator=self._authenticator,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        password=self._password,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\auth\by_plugin.py", line 212, in handle_timeout
+    raise error
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+2025-09-08 22:03:41,522 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-08 22:03:41,523 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-08 22:03:41,547 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01D590>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /session/v1/login-request?request_id=58164f90-f7b3-429c-9514-afca8284c6f0&databaseName=WEATHER_DB&schemaName=TRANSFORMED_DATA&warehouse=WEATHER_WH&request_guid=a41e0d4c-2e02-4fa5-a5ba-ea3f0d34616e
+2025-09-08 22:03:42,581 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01EAD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /session/v1/login-request?request_id=7ad4a1b7-ae4a-4a3e-bb17-98e438f290cb&databaseName=WEATHER_DB&schemaName=TRANSFORMED_DATA&warehouse=WEATHER_WH&request_guid=4bf5aa14-122d-44a7-845c-aefe427a3da7
+2025-09-08 22:03:42,583 - ERROR - Error Loading Dataframe to Snowflake: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\util\connection.py", line 79, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 1058, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+        self, "Failed to establish a new connection: %s" % e
+    )
+snowflake.connector.vendored.urllib3.exceptions.NewConnectionError: <snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01D450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 485, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 827, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<11 lines>...
+        **response_kw
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+snowflake.connector.vendored.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ewvigsq-hbc46363.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=58164f90-f7b3-429c-9514-afca8284c6f0&databaseName=WEATHER_DB&schemaName=TRANSFORMED_DATA&warehouse=WEATHER_WH&request_guid=a41e0d4c-2e02-4fa5-a5ba-ea3f0d34616e (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01D450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 1083, in _request_exec
+    raw_ret = session.request(
+        method=method,
+    ...<6 lines>...
+        auth=auth,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 518, in send
+    raise ConnectionError(e, request=request)
+snowflake.connector.vendored.requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ewvigsq-hbc46363.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=58164f90-f7b3-429c-9514-afca8284c6f0&databaseName=WEATHER_DB&schemaName=TRANSFORMED_DATA&warehouse=WEATHER_WH&request_guid=a41e0d4c-2e02-4fa5-a5ba-ea3f0d34616e (Caused by NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x000001C7AE01D450>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1736, in _authenticate
+    auth.authenticate(
+    ~~~~~~~~~~~~~~~~~^
+        auth_instance=auth_instance,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        session_parameters=self._session_parameters,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\auth\_auth.py", line 238, in authenticate
+    ret = self._rest._post_request(
+        url,
+    ...<2 lines>...
+        socket_timeout=auth_instance._socket_timeout,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 728, in _post_request
+    ret = self.fetch(
+        "post",
+    ...<8 lines>...
+        socket_timeout=socket_timeout,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 847, in fetch
+    ret = self._request_exec_wrapper(
+        session, method, full_url, headers, data, retry_ctx, **kwargs
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 988, in _request_exec_wrapper
+    raise e
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 898, in _request_exec_wrapper
+    return_object = self._request_exec(
+        session=session,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\network.py", line 1181, in _request_exec
+    raise OperationalError(
+    ...<2 lines>...
+    )
+snowflake.connector.errors.OperationalError: 251011: 251011: ConnectionTimeout occurred during login. Will be handled by authenticator
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alblc\Desktop\api_weather_etl\scripts\load_snowflake.py", line 54, in load_transformed_to_snowflake
+    conn = snowflake.connector.connect(
+        user=cfg['SNOWFLAKE_USER'],
+    ...<4 lines>...
+        schema='TRANSFORMED_DATA'
+    )
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 972, in connect
+    self.__open_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1371, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1704, in authenticate_with_retry
+    self._authenticate(auth_instance)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1782, in _authenticate
+    raise auth_op from e
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\connection.py", line 1757, in _authenticate
+    auth_instance.handle_timeout(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        authenticator=self._authenticator,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        password=self._password,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alblc\AppData\Local\Programs\Python\Python313\Lib\site-packages\snowflake\connector\auth\by_plugin.py", line 212, in handle_timeout
+    raise error
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+2025-09-08 22:05:22,862 - INFO - Success: Extracted weather for London
+2025-09-08 22:05:23,433 - INFO - Success: Extracted weather for Paris
+2025-09-08 22:05:24,015 - INFO - Success: Extracted weather for New York
+2025-09-08 22:05:24,269 - INFO - Success: Extracted weather for Tokyo
+2025-09-08 22:05:24,271 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-08 22:05:24,271 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-08 22:05:35,553 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x0000029591283A10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /session/v1/login-request?request_id=71ba0dfa-8e88-41ba-a95d-84be756504fd&databaseName=WEATHER_DB&schemaName=RAW_DATA&warehouse=WEATHER_WH&request_guid=c74846fb-60b8-41df-80fc-1f5008d564e7
+2025-09-08 22:05:53,133 - INFO - Inserted raw data for London
+2025-09-08 22:05:53,747 - INFO - Inserted raw data for Paris
+2025-09-08 22:05:54,157 - INFO - Inserted raw data for New York
+2025-09-08 22:05:55,181 - INFO - Inserted raw data for Tokyo
+2025-09-08 22:05:56,428 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-08 22:05:56,429 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-08 22:06:09,427 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x0000029592DE96D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /ptt61000-s/stages/508620a8-1dac-4483-990f-e27a3025a3c2/file0.txt
+2025-09-08 22:06:14,015 - INFO - Snowflake Connector for Python Version: 3.17.3, Python Version: 3.13.5, Platform: Windows-11-10.0.26100-SP0
+2025-09-08 22:06:14,016 - INFO - Connecting to GLOBAL Snowflake domain
+2025-09-08 22:06:19,450 - INFO - Data quality check passed: no issues found.
