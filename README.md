@@ -1,0 +1,1 @@
+This project extracts, transforms, and loads weather data using Python scripts orchestrated by Apache Airflow. See `dags/` for the DAG definition and `scripts/` for the ETL logic.
